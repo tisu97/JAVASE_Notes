@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<style type="text/css">
+			/*页面整体背景图*/
+			body{
+				background-image: url(img/bg.jpg);	
+			}
+			/*
+			 * 外层白色背景
+			 */
+			.formId{
+				width: 700px;
+				height: 500px;
+				border: 1px solid #333;
+				margin: 150px auto;
+				background-color: #FFFFFF;
+				padding-top: 30px;
+				padding-left:150px;
+			}
+			/*
+			 * 表单注册区域
+			 */
+			.formReg{
+				width: 500px;
+				height: 450px;
+				border: 0px solid #333;
+			}
+			h3{
+				color: #0000FF;
+				font-size: 20px;
+			}
+			h3 span{
+				color: #000000;
+				font-size:16px;
+			}
+			tr{
+				height: 35px;
+			}
+			.in{
+				width: 200px;
+				height: 30px;
+				margin-left: 10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="formId">
+			<div class="formReg">
+				<h3>用户注册 <span> USERREGiSTER</span></h3>
+				<form action="#" method="get">
+				<table width="500px">
+					<tr>
+						<td align="right">用户名</td>
+						<td colspan="2"><input  class="in" name="username" placeholder="请输入用户名"/></td>
+					</tr>
+					<tr>
+						<td align="right">密码</td>
+						<td colspan="2"><input class="in" type="password" name="password" placeholder="请输入用密码"/></td>
+					</tr>
+					<tr>
+						<td align="right">性别</td>
+						<td colspan="2">男<input type="radio" name="sex" checked="checked"/>
+						            女<input type="radio" name="sex"></td>
+					</tr>
+					<tr>
+						<td align="right">验证码</td>
+						<td><input type="text" name="code"></td>
+						<td><img src="img/checkcode.jpg"></td>
+					</tr>
+					<tr>						
+						<td colspan="3" align="center">
+							<input type="image" src="img/btn.jpg" />
+						</td>
+					</tr>
+				</table>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
